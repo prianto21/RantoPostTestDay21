@@ -1,0 +1,597 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-07-19T13:29:34.367Z",
+        "line": 3,
+        "name": "Valid email",
+        "description": "",
+        "id": "tentukan-email-valid-atau-tidak;valid-email",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1677000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "saya memasukan email \"budi@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"budi@gmail.com\"",
+                  "offset": 21
+                }
+              ],
+              "location": "stepdefs.EmailFeatureStepDef.saya_memasukan_email(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 138000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "saya test formatnya",
+            "match": {
+              "location": "stepdefs.EmailFeatureStepDef.saya_test_formatnya()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3291000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "hasilnya mesti \"benar\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"benar\"",
+                  "offset": 15
+                }
+              ],
+              "location": "stepdefs.EmailFeatureStepDef.hasilnya_harus(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-19T13:29:34.412Z",
+        "line": 8,
+        "name": "Invalid email",
+        "description": "",
+        "id": "tentukan-email-valid-atau-tidak;invalid-email",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 405000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "saya memasukan email \"budiaja.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"budiaja.com\"",
+                  "offset": 21
+                }
+              ],
+              "location": "stepdefs.EmailFeatureStepDef.saya_memasukan_email(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 73000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "saya test formatnya",
+            "match": {
+              "location": "stepdefs.EmailFeatureStepDef.saya_test_formatnya()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 107000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "hasilnya mesti \"salah\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"salah\"",
+                  "offset": 15
+                }
+              ],
+              "location": "stepdefs.EmailFeatureStepDef.hasilnya_harus(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Tentukan email valid atau tidak",
+    "description": "",
+    "id": "tentukan-email-valid-atau-tidak",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/FeaturesFiles/EmailFeature.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-07-19T13:29:34.428Z",
+        "line": 2,
+        "name": "login dengan kredensial valid",
+        "description": "",
+        "id": "login-aplikasi-gtpl-bank;login-dengan-kredensial-valid",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8393679000,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "User sedang berada di halaman login",
+            "match": {
+              "location": "stepdefs.LoginStepDef.user_sedang_berada_di_halaman_login()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 230675000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User memasukan userID \"mngr422723\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"mngr422723\"",
+                  "offset": 22
+                }
+              ],
+              "location": "stepdefs.LoginStepDef.user_memasukan_userID(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 181670000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User memasukan Password \"gAtUgyr\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"gAtUgyr\"",
+                  "offset": 24
+                }
+              ],
+              "location": "stepdefs.LoginStepDef.user_memasukan_Password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1975565000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User menekan tombol login dan sistem memprosesnya",
+            "match": {
+              "location": "stepdefs.LoginStepDef.user_menekan_tombol_login_dan_sistem_memprosesnya()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 165397000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User harus berada di halaman \"Welcome To Manager\u0027s Page of GTPL Bank\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Welcome To Manager\u0027s Page of GTPL Bank\"",
+                  "offset": 29
+                }
+              ],
+              "location": "stepdefs.LoginStepDef.User_harus_berada_di_halaman(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-19T13:29:45.405Z",
+        "line": 9,
+        "name": "login dengan kredensial tidak valid",
+        "description": "",
+        "id": "login-aplikasi-gtpl-bank;login-dengan-kredensial-tidak-valid",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5672130000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User sedang berada di halaman login",
+            "match": {
+              "location": "stepdefs.LoginStepDef.user_sedang_berada_di_halaman_login()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 125360000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User memasukan userID \"gAtUgyr233\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"gAtUgyr233\"",
+                  "offset": 22
+                }
+              ],
+              "location": "stepdefs.LoginStepDef.user_memasukan_userID(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 182215000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User memasukan Password \"gAtUgyr23\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"gAtUgyr23\"",
+                  "offset": 24
+                }
+              ],
+              "location": "stepdefs.LoginStepDef.user_memasukan_Password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 586330000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User menekan tombol login dan sistem memprosesnya",
+            "match": {
+              "location": "stepdefs.LoginStepDef.user_menekan_tombol_login_dan_sistem_memprosesnya()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 152209000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User melihat alert \"User is not valid\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"User is not valid\"",
+                  "offset": 19
+                }
+              ],
+              "location": "stepdefs.LoginStepDef.user_melihat_alert(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login aplikasi GTPL BANK",
+    "description": "",
+    "id": "login-aplikasi-gtpl-bank",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/FeaturesFiles/Login.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-07-19T13:29:52.136Z",
+        "line": 2,
+        "name": "valid palindrome",
+        "description": "",
+        "id": "check-string-palindrom;valid-palindrome",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 253000,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "saya masukan string \"bebeb\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"bebeb\"",
+                  "offset": 20
+                }
+              ],
+              "location": "stepdefs.PalindromeStepDef.saya_masukan_string(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 93000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "saya test apakah palindrome",
+            "match": {
+              "location": "stepdefs.PalindromeStepDef.saya_test_apakah_palindrome()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 97000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "hasilnya harus \"true\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"true\"",
+                  "offset": 15
+                }
+              ],
+              "location": "stepdefs.PalindromeStepDef.hasilnya_harus(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-19T13:29:52.147Z",
+        "line": 7,
+        "name": "invalid palindrome",
+        "description": "",
+        "id": "check-string-palindrom;invalid-palindrome",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 183000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "saya masukan string \"baik\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"baik\"",
+                  "offset": 20
+                }
+              ],
+              "location": "stepdefs.PalindromeStepDef.saya_masukan_string(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 37000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "saya test apakah palindrome",
+            "match": {
+              "location": "stepdefs.PalindromeStepDef.saya_test_apakah_palindrome()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 95000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "hasilnya harus \"false\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"false\"",
+                  "offset": 15
+                }
+              ],
+              "location": "stepdefs.PalindromeStepDef.hasilnya_harus(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "check string palindrom",
+    "description": "",
+    "id": "check-string-palindrom",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/FeaturesFiles/Palindrom.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-07-19T13:29:52.159Z",
+        "line": 3,
+        "name": "Register dengan email valid",
+        "description": "",
+        "id": "register-aplikasi-gtpl-bank;register-dengan-email-valid",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5448708000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User sedang berada di halaman register",
+            "match": {
+              "location": "stepdefs.RegisterStepDef.user_sedang_berada_di_halaman_register()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 163503000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User memasukan email \"yanwarsolah@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"yanwarsolah@gmail.com\"",
+                  "offset": 21
+                }
+              ],
+              "location": "stepdefs.RegisterStepDef.user_memasukan_email(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status\nfrom unknown error: unexpected command response\n  (Session info: chrome\u003d103.0.5060.53)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027ranto-HP-Laptop-14-cm0xxx\u0027, ip: \u0027127.0.1.1\u0027, os.name: \u0027Linux\u0027, os.arch: \u0027amd64\u0027, os.version: \u00275.15.0-41-generic\u0027, java.version: \u002711.0.15\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.53, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: /tmp/.com.google.Chrome.axfVEA}, goog:chromeOptions: {debuggerAddress: localhost:44931}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: f6eda5e909231d532a6f4ceee5e5cf2e\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\n\tat org.openqa.selenium.remote.RemoteWebElement.submit(RemoteWebElement.java:88)\n\tat stepdefs.RegisterStepDef.user_menekan_tombol_submit(RegisterStepDef.java:38)\n\tat ✽.User menekan tombol submit(file:///home/ancient/Documents/java/Cucumber-jc/src/test/resources/FeaturesFiles/Register.feature:7)\n",
+              "duration": 2122194000,
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "User menekan tombol submit",
+            "match": {
+              "location": "stepdefs.RegisterStepDef.user_menekan_tombol_submit()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 40000,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "User akan melihat kredensial yang diberikan",
+            "match": {
+              "location": "stepdefs.RegisterStepDef.user_akan_melihat_kredensial_yang_diberikan()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-19T13:29:59.906Z",
+        "line": 10,
+        "name": "Register dengan email valid",
+        "description": "",
+        "id": "register-aplikasi-gtpl-bank;register-dengan-email-valid",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5758768000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User sedang berada di halaman register",
+            "match": {
+              "location": "stepdefs.RegisterStepDef.user_sedang_berada_di_halaman_register()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 169003000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User memasukan email \"yanwarsolah.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"yanwarsolah.com\"",
+                  "offset": 21
+                }
+              ],
+              "location": "stepdefs.RegisterStepDef.user_memasukan_email(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 64607000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User menekan tombol submit",
+            "match": {
+              "location": "stepdefs.RegisterStepDef.user_menekan_tombol_submit()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 226577000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User akan melihat pesan validasi \"Email ID is not valid\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Email ID is not valid\"",
+                  "offset": 33
+                }
+              ],
+              "location": "stepdefs.RegisterStepDef.user_akan_melihat_pesan_validasi(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Register Aplikasi GTPL Bank",
+    "description": "",
+    "id": "register-aplikasi-gtpl-bank",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/FeaturesFiles/Register.feature",
+    "tags": []
+  }
+]
